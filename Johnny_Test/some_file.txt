@@ -1,0 +1,4 @@
+linia 1
+linia 2
+to jest nie dzia³aj¹cy kod.
+error.
