@@ -1,4 +1,8 @@
 dupa 234 lixxxxk as
+<<<<<<< HEAD
 <<NEW LINE FOR ADDING>>
 
+=======
+###LINIA 2 KONFLIKTOWA###
+>>>>>>> origin/TEST_BRANCH
 telebim
