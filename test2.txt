@@ -5,10 +5,7 @@ add code
 
 etc.
 
-<<<<<<< HEAD
-
 Hello Johnny. Did you book your cab at 2 pm today :)
-=======
 --comment form Johnny
 etc.
 
@@ -16,9 +13,10 @@ etc.
 ***** Comment from Mikhail   
 
 
-
+--johnny something EERR
 
 --comment form Johnny 2
+<<<<<<< HEAD
 >>>>>>> a8bf7f104058edf615f3cf69dd9628e5345e92e8
 
 
@@ -127,3 +125,5 @@ STEP THREE
 SELECT * FROM OPERATOR (TDD_SELECT);
 );
 );
+=======
+>>>>>>> cccc032ed1515c46dc72f06bcf9caccd27ed54dc
