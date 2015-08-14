@@ -5,5 +5,18 @@ add code
 
 etc.
 
+<<<<<<< HEAD
 
 Hello Johnny. Did you book your cab at 2 pm today :)
+=======
+--comment form Johnny
+etc.
+
+
+***** Comment from Mikhail   
+
+
+
+
+--comment form Johnny 2
+>>>>>>> a8bf7f104058edf615f3cf69dd9628e5345e92e8
