@@ -7,15 +7,11 @@ add code
 
 etc.
 
-Hello Johnny. Did you book your cab at 2 pm today :)
 --comment form Johnny
 etc.
 
 
 ***** Comment from Mikhail   
-
-
---johnny something EERR
 
 --comment form Johnny 2
 
@@ -90,38 +86,21 @@ cast(cast(MIC_UPDATE_DATE AS FORMAT ''mm/dd/yyyyBHH:MI:SS'') AS VARCHAR(20)),
 trim(MIC_SECURITY_COD_VC),
 trim(LIVEST_SALES_REP_DES_VC),
 trim(ADDITIVE_SALES_REP_DES_VC),
+ATEST1,
+TEST2,
 trim(COMPAN_SALES_REP_DES_VC),
 trim(DISTRIBUTOR_GROUP_COD_VC)
 from ID_T_DR_MST_CUS_CST2ALL
  where country_cod_vc = ''IT'';'
 );
 
-DEFINE OPERATOR EXPORT_CUST
-TYPE DATACONNECTOR CONSUMER
-SCHEMA MIC_IDM_DR_V_V
-ATTRIBUTES
-(
-VARCHAR FILENAME='/app/pfireit/CustomScripts/IT_OMR/CUST.txt',
-VARCHAR FORMAT='DELIMITED',
-VARCHAR TEXTDELIMITER='|',
- VARCHAR INDICATORMODE='N',
- VARCHAR OPENMODE='WRITE'
-);
-STEP ONE
-(APPLY
- TO OPERATOR (FILE_WRITE_ORD)
-SELECT * FROM OPERATOR (EXPORT_ORD);
-);
+--comment form Johnny 2
 
-STEP TWO
-(APPLY
-        TO OPERATOR (FILE_WRITE_PRD)
-SELECT * FROM OPERATOR (EXPORT_PRD);
-);
-
+--comment form Manjul
 STEP THREE
 (APPLY
  TO OPERATOR (EXPORT_CUST)
 SELECT * FROM OPERATOR (TDD_SELECT);
 );
 );
+
